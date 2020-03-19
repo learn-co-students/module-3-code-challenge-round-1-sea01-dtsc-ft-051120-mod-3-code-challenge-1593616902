@@ -59,7 +59,7 @@ If you have time, this would also be a good time to show the confusion matrix.
 
 #### Hyperparameter Tuning
 
-Build a second `LogisticRegression` model, this time with at least one hyperparameter changed.  Repeat the same performance checks on this model that you used for the first model.
+Build a second `LogisticRegression` model, this time with at least one hyperparameter changed.  (You do NOT need to use GridSearch.) Repeat the same performance checks on this model that you used for the first model.
 
 Write at least one sentence explaining which of the two models you are going to choose as your "best model".
 
