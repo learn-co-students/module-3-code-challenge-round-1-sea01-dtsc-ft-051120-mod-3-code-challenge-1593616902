@@ -45,7 +45,7 @@ Where `df` is the full original dataset.  Then perform your train-test split aga
 
 Because we intend to use a model with regularization, the feature magnitudes need to be scaled in order to avoid overly penalizing the features that happen to have larger magnitudes.  Use the sklearn `StandardScaler` ([documentation here](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)) to scale all of the features.  It is okay if you lose the feature names at this stage.
 
-If you are getting stuck at this step, skip it.  You can modify the model hyperparameters so it will be able to converge without scaling, although the performance will be worse.
+If you are getting stuck at this step, skip it.  You can increase the `max_iter` hyperparameter of the logistic regression model so it will be able to converge without scaling, although the performance will be worse.  Keep in mind whether or not you scaled the data in your final analysis.
 
 ### Modeling
 
@@ -83,7 +83,7 @@ Before you submit your modeling analysis, make sure you have completed all of th
  - [ ] Fit a `LogisticRegression` model on `X_train` and investigated its performance in terms of `recall_score`
  - [ ] Fit a second `LogisticRegression` model on `X_train` and compared its performance to the previous model
  - [ ] Created a final `LogisticRegression` model and fit on `X_train`
- - [ ] Transformed `X_test` with the same imputer and scaler fitted on `X_train`
+ - [ ] Transformed `X_test` with the same imputer and scaler fitted on `X_train` (skip this if you did not get preprocessing finished on the training data)
  - [ ] Evaluated the final model's performance on `X_test`, and interpreted for a business audience
  - [ ] Interpreted the final model's coefficients
 
