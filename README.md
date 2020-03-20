@@ -19,7 +19,7 @@ You have been asked by a manufacturer to build a machine learning model to help 
 
 ### Data Understanding
 
-Contained in this repo is a CSV file named `quality_assurance.csv`.  Each record represents a single part.  The columns include ten features labeled `A` through `J`, and a target called `flawed`.  If `flawed` is equal to 1, that means that the part has a manufacturing flaw and should not be shipped to customers.
+Contained in this repo is a CSV file named `quality_assurance.csv`.  Each record represents a single part.  The columns include ten features labeled `A` through `Z`, and a target called `flawed`.  If `flawed` is equal to 1, that means that the part has a manufacturing flaw and should not be shipped to customers.
 
 Import the quality assurance CSV data using Pandas.
 
@@ -61,7 +61,9 @@ If you have time, this would also be a good time to show the confusion matrix.
 
 Build a second `LogisticRegression` model, this time with at least one hyperparameter changed.  Repeat the same performance checks on this model that you used for the first model.
 
-Write at least one sentence explaining which of the two models you are going to choose as your "best model".
+_Hint:_ The business believes that at least one of these features is irrelevant for predicting manufacturing flaws.  Consider using hyperparameters to create a model that will perform well under these circumstances.
+
+Write at least one sentence explaining which of the two (or more) models you are going to choose as your "best model".
 
 ### Model Evaluation
 
