@@ -59,7 +59,7 @@ If you have time, this would also be a good time to show the confusion matrix.
 
 #### Hyperparameter Tuning
 
-Build a second `LogisticRegression` model, this time with at least one hyperparameter changed.  Repeat the same performance checks on this model that you used for the first model.
+Build a second `LogisticRegression` model, this time with at least one hyperparameter changed.  (You do NOT need to use GridSearch.) Repeat the same performance checks on this model that you used for the first model.
 
 _Hint:_ The business believes that at least one of these features is irrelevant for predicting manufacturing flaws.  Consider using hyperparameters to create a model that will perform well under these circumstances.
 
